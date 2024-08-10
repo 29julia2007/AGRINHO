@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2em 0;
+    text-align: center;
+}
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.info-box {
+    flex: 1 1 calc(20% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #000;
+    border-radius: 2px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .info-box {
+        flex: 1 1 100%; 
+    }
+}
+.destinos-grid1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info-box {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+    width: 300px;
+}
+.destino {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.destino img {
+    width: 100%;
+    height: auto;
+}
+
+.destino h3 {
+    background: #4CAF50;
+    color: white;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+.info-box h3 {
+    background: #4CAF50;
+    color: white;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+.destino p {
+    padding: 1em;
+    text-align: left;
+}
+
+form {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label, form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
